@@ -62,8 +62,8 @@ Grafiklerde eğitim ve doğrulama (validation) eğrilerinin birbirini takip etme
 ### Karmaşıklık Matrisi (Confusion Matrix)
 Modelin hata yaptığı noktalar bu matris üzerinden okunabilir. Örneğin, modelin 4 rakamını 9 ile karıştırma sıklığı gibi kritik detaylar burada ortaya çıkarılmıştır.
 
-<p align="center>
-  <img src="images/cm.png" width="800">
+<p align="center">
+  <img src="images/confusion_matrix.png" width="500">
 </p>
 
 <br>
@@ -72,7 +72,7 @@ Modelin hata yaptığı noktalar bu matris üzerinden okunabilir. Örneğin, mod
 Projenin en güçlü yanlarından biri, modelin yanlış bildiği yaklaşık 90 örneği görselleştirmesidir. Yapılan incelemede; hataların modelden ziyade, insan gözünün dahi zorlandığı, son derece biçimsiz veya silik yazılmış görsellerden kaynaklandığı tespit edilmiştir.
 
 <p align="center">
-  <img src="images/error_analyse.png" width="800">
+  <img src="images/error_analyse.png" width="700">
 </p>
 
 ---
