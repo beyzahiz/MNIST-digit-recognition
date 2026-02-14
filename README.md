@@ -1,4 +1,4 @@
-# 🖋️ MNIST El Yazısı Rakam Tanıma: Derin Öğrenme ile Uçtan Uca Sınıflandırma
+# MNIST El Yazısı Rakam Tanıma: Derin Öğrenme ile Uçtan Uca Sınıflandırma
 
 Bu proje, yapay zeka ve bilgisayarlı görü (Computer Vision) dünyasının temel taşlarından biri olan **MNIST** veri seti üzerinde, geleneksel yöntemlerden modern yaklaşımlara uzanan kapsamlı bir karşılaştırmalı analiz projesidir. Proje kapsamında hem klasik bir **Çok Katmanlı Algılayıcı (MLP)** hem de ileri seviye bir **Evrişimli Sinir Ağı (CNN)** mimarisi inşa edilerek performans farkları mühendislik perspektifiyle değerlendirilmiştir.
 
@@ -19,6 +19,10 @@ Bu proje, yapay zeka ve bilgisayarlı görü (Computer Vision) dünyasının tem
 * **Hacim:** 60.000 eğitim örneği ve 10.000 test örneği.
 * **Ön İşleme (Preprocessing):** * **Normalizasyon:** Pikseller 0-1 aralığına çekilerek gradyan inişinin (Gradient Descent) daha hızlı yakınsaması sağlanmıştır.
 * **Reshaping:** Veri, CNN mimarisi için (28, 28, 1) formatında 4 boyutlu tensör yapısına dönüştürülmüştür.
+
+<p align="center">
+  <img src="images/data.png" width="800" alt="MNIST Data Sample">
+</p>
 
 ---
 
@@ -45,7 +49,11 @@ Eğitim sırasında 10 epoch boyunca **Adam Optimizer** ve **Sparse Categorical 
 * **Eğitim Kaybı (Loss):** 0.0076
 Grafiklerde eğitim ve doğrulama (validation) eğrilerinin birbirini takip etmesi, modelin veriyi ezberlemeden genelleyebildiğini göstermektedir.
 
-![Eğitim Grafikleri](egitim_grafikleri.png)
+<br>
+
+<p align="center">
+  <img src="images/graphs.png" width="900">
+</p>
 
 ---
 
@@ -54,12 +62,18 @@ Grafiklerde eğitim ve doğrulama (validation) eğrilerinin birbirini takip etme
 ### Karmaşıklık Matrisi (Confusion Matrix)
 Modelin hata yaptığı noktalar bu matris üzerinden okunabilir. Örneğin, modelin 4 rakamını 9 ile karıştırma sıklığı gibi kritik detaylar burada ortaya çıkarılmıştır.
 
-![Confusion Matrix](confusion_matrix.png)
+<p align="center>
+  <img src="images/cm.png" width="800">
+</p>
+
+<br>
 
 ### Niteliksel Hata Analizi (Error Analysis)
 Projenin en güçlü yanlarından biri, modelin yanlış bildiği yaklaşık 90 örneği görselleştirmesidir. Yapılan incelemede; hataların modelden ziyade, insan gözünün dahi zorlandığı, son derece biçimsiz veya silik yazılmış görsellerden kaynaklandığı tespit edilmiştir.
 
-![Hata Örnekleri](hata_analizi.png)
+<p align="center">
+  <img src="images/error_analyse.png" width="800">
+</p>
 
 ---
 
